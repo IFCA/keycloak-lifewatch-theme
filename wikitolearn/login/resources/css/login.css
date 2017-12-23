@@ -195,11 +195,24 @@ a#kc-current-locale-link::after {
 }
 
 #kc-info {
+    align-self: center;
+    justify-self: center;
+    max-width: 16rem;
     padding-bottom: 3rem;
 }
 
 #kc-info-wrapper {
+    display: grid;
+    align-items: center;
+    justify-items: center;
     font-size: 13px;
+}
+
+#kc-providers-list {
+    width: 24rem;
+    max-height: 10rem;
+    overflow: hidden;
+    overflow-y: scroll;
 }
 
 #kc-form-options span {
@@ -289,6 +302,11 @@ ol#kc-totp-settings li:first-of-type {
 
     #kc-info {
         grid-column: 2;
+    }
+
+    #kc-providers-list {
+        line-height: 1.5;
+        width: 16rem;
     }
 }
 
