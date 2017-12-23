@@ -49,9 +49,9 @@ function populateProviders() {
 // I have to set it on <body onload="initializeEverything()"></body>
 // STUPID JS
 
-function initializeEverything(url) {
+function initializeEverything(url = "https://login.wtl2.wikitolearn-test.org/shibboleth-discovery/idps") {
     populateProviders()
-    loadIdpsLogos(/*"https://login.wtl2.wikitolearn-test.org/shibboleth-discovery/idps"*/url)
+    loadIdpsLogos(url)
 }
 
 
