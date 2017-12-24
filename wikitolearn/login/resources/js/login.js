@@ -13,7 +13,7 @@ function loadIdpsLogos (url) {
             let item = DOMProviders.item(i)
             let alias = item.getAttribute("data-provider-alias")
             let idp = idps.find(getUrlByAlias(alias))
-            if (idp) {
+            if (idp && idp.logo !== null) {
                 item.firstElementChild.setAttribute("src", idp.logo)
             }
         }
