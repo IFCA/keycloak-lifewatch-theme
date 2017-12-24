@@ -31,7 +31,7 @@
     </#if>
 </head>
 
-<body class="${properties.kcBodyClass!}" onload="initializeEverything('${url.resourcesPath}/fakeApiJson/idps.json')">
+<body class="${properties.kcBodyClass!}" onload="initializeEverything()">
     <div id="kc-logo">
         <a href="${properties.kcLogoLink!'#'}">
             <img src="${url.resourcesPath}/img/wikitolearn-logo-100.png" alt="wikitolearn logo"/>
