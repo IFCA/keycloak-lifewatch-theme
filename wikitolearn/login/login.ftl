@@ -64,7 +64,7 @@
             <input style="margin-bottom:.5rem" oninput="filterProviders(this.value)" id="input-provider" class="${properties.kcInputClass!}" placeholder="Type in a provider..." autocomplete="off"/>
             <div id="kc-providers-list">
                 <#list social.providers as p>
-                    <a href="${p.loginUrl}">
+                    <a href="${p.loginUrl}" class="wtl-dropdown-link">
                         <div class="wtl-dropdown-element" id="${p.providerId}" name="provider" data-provider-id="${p.providerId}" data-provider-alias="${p.alias}" data-provider-name="${p.displayName}">
                             <img class="wtl-idp-icon" src="" alt=""/>
                             ${p.displayName}

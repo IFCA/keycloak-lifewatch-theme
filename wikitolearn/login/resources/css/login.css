@@ -57,6 +57,15 @@ label {
     margin-left: 0;
 }
 
+.wtl-dropdown-link {
+    text-decoration: none;
+    color: #222222;
+}
+
+.wtl-dropdown-link:hover {
+    background-color: lightgray;
+}
+
 .wtl-dropdown-element {
     display: inline-flex;
     align-items: center;
