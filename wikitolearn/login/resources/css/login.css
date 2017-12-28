@@ -68,6 +68,8 @@ label {
     border: 1px solid #dbdbdb;
     border-radius: .25rem;
     width: 21rem;
+    overflow-wrap: break-word;
+    word-break: break-word;
 }
 
 .wtl-input {
