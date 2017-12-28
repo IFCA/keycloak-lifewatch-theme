@@ -63,7 +63,8 @@ label {
 }
 
 .wtl-dropdown-element:hover {
-    background-color: lightgray;
+    background-color: whitesmoke;
+    color: #222222;
 }
 
 .wtl-dropdown-element {
