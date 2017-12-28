@@ -67,6 +67,7 @@ label {
     background: white;
     border: 1px solid #dbdbdb;
     border-radius: .25rem;
+    width: 21rem;
 }
 
 .wtl-input {
@@ -210,7 +211,7 @@ a#kc-current-locale-link::after {
 }
 
 #kc-providers-list {
-    width: 16rem;
+    width: 24rem;
     max-height: 10rem;
     overflow: hidden;
     overflow-y: scroll;
@@ -309,6 +310,10 @@ ol#kc-totp-settings li:first-of-type {
         line-height: 1.5;
         width: 16rem;
     }
+
+    .wtl-dropdown-element {
+        width: 14rem;
+    }
 }
 
 @media (max-width: 540px) {
@@ -318,5 +323,9 @@ ol#kc-totp-settings li:first-of-type {
     
     .wtl-input.wtl-input-lg {
         width: 16rem;
+    }
+
+    .wtl-dropdown-element {
+        width: 14rem;
     }
 }
