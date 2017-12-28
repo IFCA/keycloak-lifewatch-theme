@@ -52,8 +52,8 @@ label {
 
 .wtl-idp-icon {
     margin: 2px;
-    height: 1.5rem;
-    width: 1.5rem;
+    max-height: 1.5rem;
+    max-width: 1.5rem;
     margin-left: 0;
 }
 
@@ -62,7 +62,7 @@ label {
     align-items: center;
     align-content: flex-start;
     padding: .5rem;
-    margin: .2rem;
+    margin-bottom: .2rem;
     line-height: 1.5;
     background: white;
     border: 1px solid #dbdbdb;
@@ -301,7 +301,6 @@ ol#kc-totp-settings li:first-of-type {
         border-right: 1px solid;
         border-bottom: 0;
         border-image: linear-gradient(to bottom, #006137 20%, #6bb23f 20%, #6bb23f 40%,#FFBE2E 40%, #FFBE2E 60%, #DC3C0C 60%, #DC3C0C 80%, #840019 80%) 6;
-
     } 
 
     #kc-info {
@@ -314,7 +313,7 @@ ol#kc-totp-settings li:first-of-type {
     }
 
     .wtl-dropdown-element {
-        width: 14rem;
+        width: 13rem;
     }
 }
 
@@ -328,6 +327,6 @@ ol#kc-totp-settings li:first-of-type {
     }
 
     .wtl-dropdown-element {
-        width: 14rem;
+        width: 13rem;
     }
 }

@@ -66,7 +66,7 @@
                 <#list social.providers as p>
                     <a href="${p.loginUrl}">
                         <div class="wtl-dropdown-element" id="${p.providerId}" name="provider" data-provider-id="${p.providerId}" data-provider-alias="${p.alias}" data-provider-name="${p.displayName}">
-                            <img class="wtl-idp-icon" src="${url.resourcesPath}/img/provider-logo-placeholder.svg"/>
+                            <img class="wtl-idp-icon" src="${url.resourcesPath}/img/provider-logo-placeholder.svg" onerror="${url.resourcesPath}/img/provider-logo-placeholder.svg"/>
                             ${p.displayName}
                         </div> 
                     </a>    
