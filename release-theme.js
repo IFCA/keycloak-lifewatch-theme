@@ -33,5 +33,7 @@ archive.on('error', function(err){
 
 archive.pipe(output);
 archive.directory("wikitolearn/META-INF/", "META-INF");
-archive.directory("wikitolearn/", "theme");
+archive.directory("wikitolearn/common/", "theme/wikitolearn/common/");
+archive.directory("wikitolearn/login/", "theme/wikitolearn/login/");
+archive.directory("wikitolearn/welcome/", "theme/wikitolearn/welcome/");
 archive.finalize();
