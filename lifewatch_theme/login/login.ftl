@@ -7,7 +7,7 @@
     <#elseif section = "form">
         <#if realm.password>
             <form id="kc-form-login" class="${properties.kcFormClass!}" onsubmit="login.disabled = true; return true;" action="${url.loginAction}" method="post">
-                <div class="wtl-heading">Log in with a WTL account</div>
+                <div class="wtl-heading">Log in with a local account</div>
                 <div class="${properties.kcFormGroupClass!}">
                     <div class="${properties.kcInputWrapperClass!}">
                         <#if usernameEditDisabled??>
