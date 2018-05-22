@@ -1,14 +1,14 @@
 #!/bin/sh
 
-if [ -d keycloak-wikitolearn-theme ]; then
-    rm -rf keycloak-wikitolearn-theme
+if [ -d keycloak-lifewatch-theme ]; then
+    rm -rf keycloak-lifewatch-theme
 fi
-git clone https://github.com/sgametrio/keycloak-wikitolearn-theme.git
-cd keycloak-wikitolearn-theme
+git clone https://github.com/IFCA/keycloak-lifewatch-theme
+cd keycloak-lifewatch-theme
 chmod +x create-theme-archive.sh
 # This must be executed from theme root directory
 ./create-theme-archive.sh
 cd ..
-bin/jboss-cli.sh --command="module add --name=org.wikitolearn.wikitolearnTheme --resources=keycloak-wikitolearn-theme/wikitolearn.zip"
+bin/jboss-cli.sh --command="module add --name=org.lifewatch.lifewatchTheme --resources=keycloak-lifewatch-theme/lifewatch-theme.zip"
 # Remove downloaded files
-rm -rf keycloak-wikitolearn-theme
+rm -rf keycloak-lifewatch-theme

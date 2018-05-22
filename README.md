@@ -1,4 +1,4 @@
-# Wikitolearn theme
+# LifeWatch Keycloak theme (based on Wikitolearn theme)
 
 ## Setting up the archive (Recommended method)
 

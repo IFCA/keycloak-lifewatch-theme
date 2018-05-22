@@ -4,10 +4,10 @@ const archiver = require("archiver");
 // Cloning the repo has to be made here or have I to consider it already done?
 
 const package = require("./package.json");
-const outputFile = `wikitolearn-theme-dist-${package.version}.zip`;
+const outputFile = `lifewatch-theme-dist-${package.version}.zip`;
 
 const destDir = process.argv[2] || "dist";
-const badDestDirRegexp = /^(wikitolearn|node_modules)\/?/;
+const badDestDirRegexp = /^(lifewatch-theme|node_modules)\/?/;
 if (badDestDirRegexp.test(destDir)) {
     console.log("Cannot use that dir, it is an unsafe dir");
     return 0;
@@ -32,8 +32,8 @@ archive.on('error', function(err){
 });
 
 archive.pipe(output);
-archive.directory("wikitolearn/META-INF/", "META-INF");
-archive.directory("wikitolearn/common/", "theme/wikitolearn/common/");
-archive.directory("wikitolearn/login/", "theme/wikitolearn/login/");
-archive.directory("wikitolearn/welcome/", "theme/wikitolearn/welcome/");
+archive.directory("lifewatch-theme/META-INF/", "META-INF");
+archive.directory("lifewatch-theme/common/", "theme/lifewatch-theme/common/");
+archive.directory("lifewatch-theme/login/", "theme/lifewatch-theme/login/");
+archive.directory("lifewatch-theme/welcome/", "theme/lifewatch-theme/welcome/");
 archive.finalize();

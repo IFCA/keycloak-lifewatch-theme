@@ -1,5 +1,5 @@
 #!/bin/bash
-# Create "wikitolearn" theme as an archive. Must be executed within keycloak root directory
+# Create "lifewatch-theme" theme as an archive. Must be executed within keycloak root directory
 
 if [ -d theme ]; then
     rm -rf theme
@@ -8,9 +8,9 @@ mkdir theme
 if [ -d META-INF ]; then
     rm -rf META-INF
 fi
-cp -r wikitolearn theme/
-mv theme/wikitolearn/META-INF .
-zip -r wikitolearn.zip theme META-INF
+cp -r lifewatch-theme theme/
+mv theme/lifewatch-theme/META-INF .
+zip -r lifewatch-theme.zip theme META-INF
 
 # Remove junk
 rm -r theme

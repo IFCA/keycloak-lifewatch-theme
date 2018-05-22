@@ -1,0 +1,6 @@
+{
+    "themes": [{
+        "name" : "lifewatch-theme",
+        "types": [ "login" ]
+    }]
+}
